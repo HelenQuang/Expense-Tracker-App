@@ -17,11 +17,11 @@
       <div class="inc-exp-container">
         <div>
           <h4>Incomes</h4>
-          <p id="money-plus" class="money plus">+ €0.00</p>
+          <p id="money-plus" class="money plus">€0.00</p>
         </div>
         <div>
           <h4>Expenses</h4>
-          <p id="money-minus" class="money minus">- €0.00</p>
+          <p id="money-minus" class="money minus">€0.00</p>
         </div>
       </div>
 
@@ -36,12 +36,12 @@
       <form id="form">
         <div class="form-control">
           <label for="text">Description:</label>
-          <input type="text" id="text" placeholder="Enter text..." />
+          <input type="text" id="description" placeholder="Enter text..." />
         </div>
 
         <div class="form-control">
           <label for="text">Category:</label>
-          <input type="text" id="text" placeholder="Enter text..." />
+          <input type="text" id="category" placeholder="Enter text..." />
         </div>
 
         <div class="form-control">
@@ -49,12 +49,26 @@
             >Amount: <br />
             Positive (+) for income, Negative (-) for expense
           </label>
-          <input type="number" id="amount" placeholder="Enter amount..." />
+          <input
+            type="number"
+            step="0.01"
+            id="amount"
+            placeholder="Enter amount..."
+          />
         </div>
         <button class="btn">Add transaction</button>
       </form>
     </div>
 
     <script src="script.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>

@@ -126,6 +126,7 @@ input[type="number"] {
   color: #333;
   display: flex;
   justify-content: space-between;
+  align-self: center;
   position: relative;
   padding: 10px;
   margin: 10px 0;
@@ -153,7 +154,6 @@ input[type="number"] {
   transform: translate(-100%, -50%);
   opacity: 0;
   transition: opacity 0.3s ease;
-  margin-right: 20px;
 }
 
 .list li:hover .delete-btn {
